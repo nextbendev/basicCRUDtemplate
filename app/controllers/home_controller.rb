@@ -1,4 +1,4 @@
-class ApplicationController < ActionController::Base
+class HomeController < ApplicationController
   def index
     @categories = Category.all
 
@@ -11,5 +11,11 @@ class ApplicationController < ActionController::Base
     end
 
 
+  end
+
+  def show
+  end
+
+  def info
   end
 end
