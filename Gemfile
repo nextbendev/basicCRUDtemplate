@@ -12,7 +12,13 @@ end
 group :production do
   gem 'pg'
 end
+gem 'activeadmin'
 
+# Plus integrations with:
+gem 'devise'
+gem 'cancancan'
+gem 'draper'
+gem 'pundit'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
