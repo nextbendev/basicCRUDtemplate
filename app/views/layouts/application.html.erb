@@ -15,13 +15,17 @@
     <header>
       <%= render "blox/navbar" %>
     </header>
-    <div id="main">
-    <%= yield %>
-    </div>
+      <div id="main">
 
-
-    <footer class="footer mt-auto py-3"><%= render "blox/footer" %></footer>
-    <script src="https://kit.fontawesome.com/8b41eb6f53.js" crossorigin="anonymous"></script>
-
+        <%= yield %>
+      </div>
+      <footer class="footer mt-auto py-3"><%= render "blox/footer" %></footer>
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
+      <% end %>
+      <script src="https://kit.fontawesome.com/8b41eb6f53.js" crossorigin="anonymous"></script>
   </body>
 </html>
