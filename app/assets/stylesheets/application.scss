@@ -11,14 +11,14 @@
  * It is generally better to create a new file per style scope.
  *
  *= require bootstrap
- 
+
  *= require_self
  */
 
 
  /* Add a black background color to the top navigation */
  .topnav {
-   background-color: #333;
+
    overflow: hidden;
  }
 
@@ -52,9 +52,19 @@
  	color: black;
  	}
 
+  .imgGastro {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    height: 150px;
+  }
+
+
+// main jumbotron
  .feature {
- 	background-color: yellowgreen;
- 	color: greenyellow;
+ 	background-image: url(https://gastroben.s3.amazonaws.com/Self/51877464_10155807423645059_738272979460292608_o.jpg);
+
+  background-position: center;
  	}
 
  .article-intro {
@@ -83,3 +93,9 @@
  .small-print {
  	text-align: center;
  	}
+
+
+aside {
+  grid-area: side;
+  margin-right: 0.5rem;
+}
